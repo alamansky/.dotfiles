@@ -1,3 +1,5 @@
+export PATH="$PATH:/opt"
+
 # load environment variables
 [[ -s "~/.config/shell/env.sh" ]] && source ~/.config/shell/env.sh
 # source functions for zsh shell
@@ -37,7 +39,7 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # set omp theme - https://ohmyposh.dev/docs/installation/customize
-if [ -x "$(command -v oh-my-posh)"]; then
+if [ -x "$(command -v oh-my-posh)" ]; then
 	eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/.poshthemes/fish.omp.json)"
 fi
 
