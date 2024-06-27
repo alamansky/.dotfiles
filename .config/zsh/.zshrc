@@ -12,7 +12,7 @@ bindkey -v
 
 # source autosuggestions file
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
-source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -s "~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source ~/.local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # make zsh compdump XDG compliant
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
