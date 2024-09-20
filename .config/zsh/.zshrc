@@ -28,11 +28,6 @@ bindkey -v
 # make zsh compdump XDG compliant
 compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
-# set omp theme - https://ohmyposh.dev/docs/installation/customize
-if [ -x "$(command -v oh-my-posh)" ]; then
-	eval "$(oh-my-posh init zsh --config ${XDG_CONFIG_HOME}/oh-my-posh/.poshthemes/fish.omp.json)"
-fi
-
 # advanced zsh settings
 
 # https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
