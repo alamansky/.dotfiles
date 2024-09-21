@@ -15,11 +15,6 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 # source work file (contains anything used for professional dev)
 [[ -s "${XDG_CONFIG_HOME}/shell/work.sh" ]] && source ${XDG_CONFIG_HOME}/shell/work.sh
 
-# source autosuggestions file
-# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone
-[[ -s "${XDG_DATA_HOME}/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] &&
-source ${XDG_DATA_HOME}/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # shell settings
 
 # enable vim keybindings (terminal starts in insert mode)
