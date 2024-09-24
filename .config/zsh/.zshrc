@@ -4,7 +4,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 
 # source files
 files=(
-"env.sh" "startup.sh" "aliases.sh" "functions.sh" "work.sh" 
+"secrets.sh" "env.sh" "startup.sh" "aliases.sh" "functions.sh" "work.sh" 
 )
 for file in "${files[@]}"; do
 	[[ -s "${XDG_CONFIG_HOME}/shell/$file" ]] && source ${XDG_CONFIG_HOME}/shell/$file
