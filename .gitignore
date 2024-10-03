@@ -1,0 +1,13 @@
+# wips, unfinished fragments
+.config/shell/scratchpad.sh
+# credentials, tokens
+.config/shell/secrets.sh
+# proprietary
+.config/shell/work.sh
+
+# machine generated
+.config/zsh/.zcompdump
+.config/htop
+
+.cache/*
+.local/*
