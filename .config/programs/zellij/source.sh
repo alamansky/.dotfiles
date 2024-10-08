@@ -1,7 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 
-dir="/opt/zellij"
-
-if [ -d $dir ] && [[ ":$PATH:" != *":${dir}:"* ]]; then
-	export PATH="$PATH:$dir"
-fi
+source $XDG_CONFIG_HOME/programs/.functions.sh
+add_to_path "/opt/zellij"
