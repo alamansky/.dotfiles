@@ -9,12 +9,10 @@ fi
 sudo chsh -s $(which zsh) $(whoami)
 
 # create .zshenv file
-if [ ! -f $HOME/.zshenv ]; then
-  touch $HOME/.zshenv
-fi
+[[ -f $HOME/.zshenv ]] || touch $HOME/.zshenv
 
 # create .zshenv contents and output to file
 zshenv="# set zsh root directory\nexport ZDOTDIR="$HOME/.config/zsh"\n"
 printf "$zshenv" > $HOME/.zshenv
 
-exec zsh
+ exec zsh

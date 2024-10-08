@@ -1,7 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 
-dir="/opt/lf"
-
-if [ -d $dir ] && [[ ":$PATH:" != *":${dir}:"* ]]; then
-	export PATH="$PATH:$dir"
-fi
+source $XDG_CONFIG_HOME/programs/.functions.sh
+add_to_path "/opt/lf" 

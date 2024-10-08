@@ -1,9 +1,7 @@
 #!/usr/bin/bash
 
 # install dependency
-if ! [ -x "$(command -v unzip)" ]; then
-	sudo apt install unzip
-fi
+[[ -x "$(command -v unzip)" ]] || sudo apt install unzip
 
 # run install script
 sudo mkdir -p /opt/oh-my-posh

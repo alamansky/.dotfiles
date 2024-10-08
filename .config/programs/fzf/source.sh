@@ -1,11 +1,6 @@
-#!/usr/bin/zsh
+#!/usr/bin/bash
 
-dir="/opt/fzf"
+source $XDG_CONFIG_HOME/programs/.functions.sh
+add_to_path "/opt/fzf"
 
-if [ -d $dir ] && [[ ":$PATH:" != *":${dir}:"* ]]; then
-	export PATH="$PATH:$dir"
-fi
-
-if [ -x "$(command -v fzf)" ]; then
-	source <(fzf --zsh)
-fi
+[[ -x "$(command -v fzf)" ]] && source <(fzf --zsh)
