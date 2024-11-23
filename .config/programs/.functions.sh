@@ -35,3 +35,9 @@ download_to_opt() {
 	fi
 }
 
+# $1 - directory to add to path
+add_to_path() {
+  if [ -d $1 ] && [[ ":$PATH:" != *":$1:"* ]]; then
+    export PATH="$PATH:$1"
+  fi
+}
