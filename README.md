@@ -1,6 +1,6 @@
 # dotfiles
 
-Dotfiles and general program management for Linux.
+Dotfiles and general program management for Ubuntu Linux.
 
 ## Instructions
 
